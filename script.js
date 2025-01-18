@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     onComplete: () => {
                         setTimeout(() => {
                             loadPageContent(slide);
-                        }, 1500);
+                        }, 200);
                     },
                 });
             }
