@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 })
                 slide.parentElement.style.overflow = 'visible'
                 slide.parentElement.style.zIndex = 999
-                swiper.autoplay.stop(); // Detener el autoplay
+                swiper.autoplay.stop(); 
 
                 const rect = slide.getBoundingClientRect();
 
