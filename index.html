@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.0/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="index">
+        <h1>Flow Design</h1>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide" data-url="page1.html"><img src="./assets/img-1.jpg" alt="" data-url="page1.html"></div>
+                <div class="swiper-slide" data-url="page2.html"><img src="./assets/img-2.jpg" alt="" data-url="page2.html"></div>
+                <div class="swiper-slide" data-url="page1.html"><img src="./assets/img-1.jpg" alt="" data-url="page1.html"></div>
+                <div class="swiper-slide" data-url="page1.html"><img src="./assets/img-1.jpg" alt="" data-url="page1.html"></div>
+                <div class="swiper-slide" data-url="page1.html"><img src="./assets/img-1.jpg" alt="" data-url="page1.html"></div>
+                <div class="swiper-slide" data-url="page1.html"><img src="./assets/img-1.jpg" alt="" data-url="page1.html"></div>
+                <div class="swiper-slide" data-url="page1.html"><img src="./assets/img-1.jpg" alt="" data-url="page1.html"></div>
+                <div class="swiper-slide" data-url="page1.html"><img src="./assets/img-1.jpg" alt="" data-url="page1.html"></div>
+
+            </div>
+
+            <!-- Agregar botones de navegación -->
+            <div class="swiper-button-next swiper-control"></div>
+            <div class="swiper-button-prev swiper-control"></div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.0/swiper-bundle.min.js"></script>
+    <script>
+        // Inicializar Swiper con configuraciones avanzadas
+        const swiper = new Swiper('.swiper-container', {
+            // Activar paginación
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Habilitar la navegación de botones
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // Efectos de transición
+            effect: 'slide', // Puedes cambiarlo a 'fade', 'cube', 'coverflow', etc.
+
+            // Configuración de auto-slide
+            autoplay: {
+                delay: 3000, // Cambiar cada 3 segundos
+            },
+
+            // Configuración responsiva
+            breakpoints: {
+                
+                300: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                }
+            }
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/SplitText.min.js"></script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

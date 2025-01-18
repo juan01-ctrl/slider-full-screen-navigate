@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: "Roboto", serif;
+  background-color: black;
+  color: #ecf0f1;
+}
+
+h1 {
+  font-size: 80px;
+  letter-spacing: 4px;
+}
+
+.go-back-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  color: #b7b7b7;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 5rem;
+  /* overflow: hidden; */
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.image-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 500px;
+  display: block;
+
+}
+
+.hero-image {
+  object-fit: cover;
+  max-width: 100vw;
+  max-height: 100vh;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+/* .page-1 .section-1 {
+
+  background-image: url('/exampleimg.jpg');
+  background-size: cover;
+  Para cubrir toda la sección con la imagen
+  background-position: center;
+  Para centrar la imagen
+} */
+
+
+.text-large {
+  font-size: 26px;
+  line-height: 2;
+  letter-spacing: 2px;
+}
+
+.index {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.slide:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-slide.expanding {
+  overflow: hidden;
+  /* Evita interacciones durante la animación */
+  z-index: 40;
+  /* Asegura que el slide quede sobre los demás */
+}
+
+.content {
+  padding: 40px;
+  background: #ecf0f1;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #333;
+  background: #f1f1f1;
+  margin-bottom: 10px;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+
+.swiper-container {
+  width: 80%;
+  margin: 0 auto;
+  /* height: 300px; */
+  position: relative;
+  opacity: 0;
+}
+
+.swiper-slide img {
+  max-width: none;
+  will-change: transform;
+}
+
+.swiper-slide {
+  /* object-fit:contain; */
+  will-change: overflow;
+
+  overflow: hidden;
+  /* padding: 0 2rem; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3498db;
+  color: white;
+  font-size: 2rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+
+/* .swiper-slide:hover {
+  transform: scale(1.05);
+} */
+
+/* Botones de navegación */
+/* .swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  padding: 10px;
+} */
+
+/* Efectos de transición */
+/* .swiper-slide-active {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-out;
+} */
