@@ -176,6 +176,9 @@ img {
   cursor: pointer;
 }
 
+.swiper-control{
+  color: #fff;
+}
 
 /* .swiper-slide:hover {
   transform: scale(1.05);
